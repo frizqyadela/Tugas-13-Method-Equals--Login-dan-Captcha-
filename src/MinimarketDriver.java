@@ -47,8 +47,8 @@ public class MinimarketDriver {
             System.out.print("Masukkan CAPTCHA: ");
             String enteredCaptcha = scanner.nextLine();
 
-            // Validasi CAPTCHA
-            isValidCaptcha = expectedCaptcha.equals(enteredCaptcha);
+            // Validasi CAPTCHA dengan method string equalsIgnoreCase
+            isValidCaptcha = expectedCaptcha.equalsIgnoreCase(enteredCaptcha);
 
             if (!isValidCaptcha) {
                 System.out.println("CAPTCHA salah. Silakan coba lagi.");
